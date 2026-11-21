@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa — REDLINE MOTO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">REDLINE<span>MOTO</span></a>
+
+      <input type="checkbox" id="menu-toggle">
+      <ul class="nav-links">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="haqimizda.html">Biz haqimizda</a></li>
+        <li><a href="aloqa.html" class="active">Aloqa</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#search-modal" class="search-btn" title="Qidiruv">
+          🔍 <span>Qidirish</span>
+        </a>
+        <a href="aloqa.html" class="btn btn-primary">Buyurtma</a>
+        <label for="menu-toggle" class="hamburger" aria-label="Menyu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- QIDIRUV MODALI -->
+  <div id="search-modal" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <h3>Saytdan qidirish</h3>
+      <form action="katalog.html" method="get" class="search-form">
+        <input type="text" name="q" placeholder="Motosikl modelini yozing..." required>
+        <button type="submit" class="btn btn-primary">Izlash</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Biz Bilan <span style="color: var(--primary-red);">Bog'laning</span></h1>
+      <p>Savollaringiz bormi yoki test-drayvga yozilmoqchimisiz? Quyidagi formani to'ldiring.</p>
+    </div>
+  </section>
+
+  <!-- ALOQA BLOKI -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Chap blok: Ma'lumotlar -->
+        <div class="contact-info-card">
+          <h2>Salon Manzilimiz</h2>
+          <p style="color: var(--text-muted); margin-top: 8px;">Har kuni dam olish kunlarisiz sizni kutamiz.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Manzil</strong>
+              <span>Toshkent sh., Yunusobod tumani, Amir Temur shoh ko'chasi, 108-uy</span>
+            </div>
+            <div class="info-item">
+              <strong>Telefon raqam</strong>
+              <span>+998 (90) 123-45-67<br>+998 (71) 200-88-99</span>
+            </div>
+            <div class="info-item">
+              <strong>Ish vaqti</strong>
+              <span>Dushanba – Yakshanba: 09:00 dan 20:00 gacha</span>
+            </div>
+            <div class="info-item">
+              <strong>Elektron pochta</strong>
+              <span>info@redlinemoto.uz</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- O'ng blok: Forma -->
+        <div class="contact-form-card">
+          <h2 style="margin-bottom: 20px;">Ariza Qoldirish</h2>
+          <form action="#success-modal" method="get">
+            <div class="form-group">
+              <label for="name">Ismingiz</label>
+              <input type="text" id="name" placeholder="Ismingizni kiriting" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon raqamingiz</label>
+              <input type="tel" id="phone" placeholder="+998 90 000 00 00" required>
+            </div>
+            <div class="form-group">
+              <label for="model">Qiziqtirgan model</label>
+              <select id="model">
+                <option>Ducati Panigale V4 ($24,500)</option>
+                <option>BMW S1000RR M-Pack ($22,900)</option>
+                <option>KTM 1290 Super Duke R ($19,600)</option>
+                <option>Kawasaki Ninja ZX-10R ($18,400)</option>
+                <option>Indian Scout Bobber ($14,900)</option>
+                <option>Harley-Davidson Iron 883 ($13,200)</option>
+                <option>Yamaha MT-09 SP ($11,800)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Qo'shimcha izoh</label>
+              <textarea id="message" rows="4" placeholder="Test-drayv vaqti yoki savollaringiz..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Arizani yuborish</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YUBORILDI MODALI (:target) -->
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal-box" style="text-align: center;">
+      <a href="#" class="modal-close">✕</a>
+      <div style="font-size: 3rem; margin-bottom: 10px;">✅</div>
+      <h2>Arizangiz Qabul Qilindi!</h2>
+      <p style="color: var(--text-muted); margin: 14px 0 24px;">Menejerlarimiz 15 daqiqa ichida siz bilan bog'lanib, barcha tafsilotlarni aniqlashtiradi.</p>
+      <a href="index.html" class="btn btn-primary">Bosh sahifaga qaytish</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">REDLINE<span>MOTO</span></a>
+          <p>O'zbekistondagi premium motosikllar va moto-ekipirovka markazi. Tezlik va xavfsizlik uyg'unligi.</p>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="katalog.html">Motosikllar katalogi</a></li>
+            <li><a href="haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Toifalar</h4>
+          <ul>
+            <li><a href="katalog.html">Sportbayklar</a></li>
+            <li><a href="katalog.html">Street / Naked</a></li>
+            <li><a href="katalog.html">Cruiser & Chopper</a></li>
+            <li><a href="aloqa.html">Servis markazi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bog'lanish</h4>
+          <ul>
+            <li><a href="tel:+998901234567">+998 (90) 123-45-67</a></li>
+            <li><a href="mailto:info@redlinemoto.uz">info@redlinemoto.uz</a></li>
+            <li><a href="aloqa.html">Toshkent sh., Amir Temur ko'chasi, 108</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 REDLINE MOTO. Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

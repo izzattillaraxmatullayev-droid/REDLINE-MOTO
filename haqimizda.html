@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biz haqimizda — REDLINE MOTO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">REDLINE<span>MOTO</span></a>
+
+      <input type="checkbox" id="menu-toggle">
+      <ul class="nav-links">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="haqimizda.html" class="active">Biz haqimizda</a></li>
+        <li><a href="aloqa.html">Aloqa</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#search-modal" class="search-btn" title="Qidiruv">
+          🔍 <span>Qidirish</span>
+        </a>
+        <a href="aloqa.html" class="btn btn-primary">Buyurtma</a>
+        <label for="menu-toggle" class="hamburger" aria-label="Menyu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- QIDIRUV MODALI -->
+  <div id="search-modal" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <h3>Saytdan qidirish</h3>
+      <form action="katalog.html" method="get" class="search-form">
+        <input type="text" name="q" placeholder="Motosikl modelini yozing..." required>
+        <button type="submit" class="btn btn-primary">Izlash</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Biz <span style="color: var(--primary-red);">Haqimizda</span></h1>
+      <p>2018-yildan beri motohavaskorlar va professional poygachilar uchun eng yaxshi texnikani yetkazib beramiz.</p>
+    </div>
+  </section>
+
+  <!-- ASOSIY MA'LUMOT -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <img src="https://images.unsplash.com/photo-1558981359-219d6364c9c8?auto=format&fit=crop&w=900&q=80" alt="Redline Moto Showroom" class="about-img">
+        <div>
+          <span class="badge">Bizning Missiya</span>
+          <h2 class="section-title" style="margin-bottom: 16px;">Shunchaki Do'kon Emas, <span>Moto-Madaniyat</span> Markazi</h2>
+          <p style="color: var(--text-muted); margin-bottom: 16px;">
+            REDLINE MOTO — Ducati, Yamaha, BMW Motorrad, Kawasaki va Harley-Davidson kabi nufuzli brendlarning rasmiy hamkori. Biz har bir mijozga o'z tajribasi va haydash uslubiga mos keladigan motosiklni tanlashda yordam beramiz.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 24px;">
+            Salonimiz qoshida zamonaviy diagnostika va texnik xizmat ko'rsatish markazi, shuningdek sertifikatlangan shlem va himoya kiyimlari bo'limi faoliyat yuritadi.
+          </p>
+          <a href="katalog.html" class="btn btn-primary">Modellarni ko'rish</a>
+        </div>
+      </div>
+
+      <!-- AFZALLIKLAR -->
+      <div class="features-grid">
+        <div class="feature-box">
+          <h3>01. Rasmiy Kafolat</h3>
+          <p style="color: var(--text-muted);">Barcha yangi motosikllarga 24 oylik zavod kafolati va bepul birinchi texnik ko'rik taqdim etiladi.</p>
+        </div>
+        <div class="feature-box">
+          <h3>02. Bo'lib To'lash</h3>
+          <p style="color: var(--text-muted);">Boshlang'ich 30% to'lov bilan 12 oydan 36 oygacha qulay muddatli to'lov imkoniyati.</p>
+        </div>
+        <div class="feature-box">
+          <h3>03. Professional Servis</h3>
+          <p style="color: var(--text-muted);">Yevropada malaka oshirgan ustalar va original ehtiyot qismlar ombori doim xizmatingizda.</p>
+        </div>
+      </div>
+
+      <!-- FAQ (<details>/<summary>) -->
+      <div style="margin-top: 80px; max-width: 800px; margin-inline: auto;">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 32px;">Ko'p Beriladigan <span>Savollar</span></h2>
+        
+        <details open>
+          <summary>Motosikl sotib olishdan oldin test-drayv qilish mumkinmi?</summary>
+          <p>Ha, albatta! "A" toifali haydovchilik guvohnomangiz bo'lsa, oldindan ro'yxatdan o'tib maxsus maydonchamizda tanlangan modelni sinab ko'rishingiz mumkin.</p>
+        </details>
+
+        <details>
+          <summary>Viloyatlarga yetkazib berish xizmati bormi?</summary>
+          <p>Ha, O'zbekistonning barcha viloyatlariga maxsus yopiq moto-evakuator orqali xavfsiz yetkazib berish xizmati mavjud.</p>
+        </details>
+
+        <details>
+          <summary>Buyurtma asosida maxsus model olib kelib berasizmi?</summary>
+          <p>Agar katalogda siz izlayotgan maxsus komplektatsiya bo'lmasa, shartnoma asosida 25–35 kun ichida to'g'ridan-to'g'ri zavoddan keltirib beramiz.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">REDLINE<span>MOTO</span></a>
+          <p>O'zbekistondagi premium motosikllar va moto-ekipirovka markazi. Tezlik va xavfsizlik uyg'unligi.</p>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="katalog.html">Motosikllar katalogi</a></li>
+            <li><a href="haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Toifalar</h4>
+          <ul>
+            <li><a href="katalog.html">Sportbayklar</a></li>
+            <li><a href="katalog.html">Street / Naked</a></li>
+            <li><a href="katalog.html">Cruiser & Chopper</a></li>
+            <li><a href="aloqa.html">Servis markazi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bog'lanish</h4>
+          <ul>
+            <li><a href="tel:+998901234567">+998 (90) 123-45-67</a></li>
+            <li><a href="mailto:info@redlinemoto.uz">info@redlinemoto.uz</a></li>
+            <li><a href="aloqa.html">Toshkent sh., Amir Temur ko'chasi, 108</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 REDLINE MOTO. Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

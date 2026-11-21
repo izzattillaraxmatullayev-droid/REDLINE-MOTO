@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog — REDLINE MOTO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">REDLINE<span>MOTO</span></a>
+
+      <input type="checkbox" id="menu-toggle">
+      <ul class="nav-links">
+        <li><a href="index.html">Bosh sahifa</a></li>
+        <li><a href="katalog.html" class="active">Katalog</a></li>
+        <li><a href="haqimizda.html">Biz haqimizda</a></li>
+        <li><a href="aloqa.html">Aloqa</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#search-modal" class="search-btn" title="Qidiruv">
+          🔍 <span>Qidirish</span>
+        </a>
+        <a href="aloqa.html" class="btn btn-primary">Buyurtma</a>
+        <label for="menu-toggle" class="hamburger" aria-label="Menyu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- QIDIRUV MODALI -->
+  <div id="search-modal" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <h3>Katalogdan qidirish</h3>
+      <form action="katalog.html" method="get" class="search-form">
+        <input type="text" name="q" placeholder="Model nomini kiriting..." required>
+        <button type="submit" class="btn btn-primary">Izlash</button>
+      </form>
+      <div class="quick-tags">
+        <a href="#ducati-v4">Ducati V4</a>
+        <a href="#kawasaki-zx10r">Kawasaki ZX-10R</a>
+        <a href="#yamaha-mt09">Yamaha MT-09</a>
+        <a href="#harley-iron">Harley Iron 883</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Motosikllar <span style="color: var(--primary-red);">Katalogi</span></h1>
+      <p>O'zingizga mos uslub va quvvatdagi motosiklni tanlang. Barcha modellar sotuvda mavjud.</p>
+    </div>
+  </section>
+
+  <!-- KATALOG VA CSS FILTR -->
+  <section class="section">
+    <div class="container filter-wrapper">
+      <input type="radio" name="category" id="tab-all" checked>
+      <input type="radio" name="category" id="tab-sport">
+      <input type="radio" name="category" id="tab-naked">
+      <input type="radio" name="category" id="tab-cruiser">
+
+      <div class="filter-tabs">
+        <label for="tab-all">Barchasi (6)</label>
+        <label for="tab-sport">Sportbayk (2)</label>
+        <label for="tab-naked">Naked (2)</label>
+        <label for="tab-cruiser">Cruiser (2)</label>
+      </div>
+
+      <div class="moto-grid">
+        <!-- 1. Ducati Panigale V4 -->
+        <article class="moto-card" data-cat="sport">
+          <div class="moto-img-wrap">
+            <span class="moto-category">Sport</span>
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80" alt="Ducati Panigale V4">
+          </div>
+          <div class="moto-body">
+            <h3>Ducati Panigale V4</h3>
+            <div class="moto-specs">
+              <span>⚡ 1103 cc</span>
+              <span>🐎 215 ot kuchi</span>
+              <span>🚀 299+ km/soat</span>
+            </div>
+            <div class="moto-footer">
+              <div class="price">$24,500 <small>Yangi • 2026</small></div>
+              <a href="#ducati-v4" class="btn btn-primary">Batafsil</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Kawasaki Ninja ZX-10R -->
+        <article class="moto-card" data-cat="sport">
+          <div class="moto-img-wrap">
+            <span class="moto-category">Sport</span>
+            <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?auto=format&fit=crop&w=800&q=80" alt="Kawasaki Ninja ZX-10R">
+          </div>
+          <div class="moto-body">
+            <h3>Kawasaki Ninja ZX-10R</h3>
+            <div class="moto-specs">
+              <span>⚡ 998 cc</span>
+              <span>🐎 203 ot kuchi</span>
+              <span>🚀 299 km/soat</span>
+            </div>
+            <div class="moto-footer">
+              <div class="price">$18,400 <small>Yangi • 2026</small></div>
+              <a href="#kawasaki-zx10r" class="btn btn-primary">Batafsil</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Yamaha MT-09 SP -->
+        <article class="moto-card" data-cat="naked">
+          <div class="moto-img-wrap">
+            <span class="moto-category">Naked</span>
+            <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=800&q=80" alt="Yamaha MT-09 SP">
+          </div>
+          <div class="moto-body">
+            <h3>Yamaha MT-09 SP</h3>
+            <div class="moto-specs">
+              <span>⚡ 890 cc</span>
+              <span>🐎 119 ot kuchi</span>
+              <span>🚀 235 km/soat</span>
+            </div>
+            <div class="moto-footer">
+              <div class="price">$11,800 <small>Yangi • 2026</small></div>
+              <a href="#yamaha-mt09" class="btn btn-primary">Batafsil</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. KTM 1290 Super Duke R -->
+        <article class="moto-card" data-cat="naked">
+          <div class="moto-img-wrap">
+            <span class="moto-category">Naked</span>
+            <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?auto=format&fit=crop&w=800&q=80" alt="KTM 1290 Super Duke R">
+          </div>
+          <div class="moto-body">
+            <h3>KTM 1290 Super Duke R</h3>
+            <div class="moto-specs">
+              <span>⚡ 1301 cc</span>
+              <span>🐎 180 ot kuchi</span>
+              <span>🚀 270 km/soat</span>
+            </div>
+            <div class="moto-footer">
+              <div class="price">$19,600 <small>Yangi • 2026</small></div>
+              <a href="#ktm-duke" class="btn btn-primary">Batafsil</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Harley-Davidson Iron 883 -->
+        <article class="moto-card" data-cat="cruiser">
+          <div class="moto-img-wrap">
+            <span class="moto-category">Cruiser</span>
+            <img src="https://images.unsplash.com/photo-1558980394-4c7c9299fe96?auto=format&fit=crop&w=800&q=80" alt="Harley-Davidson Iron 883">
+          </div>
+          <div class="moto-body">
+            <h3>Harley-Davidson Iron 883</h3>
+            <div class="moto-specs">
+              <span>⚡ 883 cc</span>
+              <span>🐎 54 ot kuchi</span>
+              <span>🚀 175 km/soat</span>
+            </div>
+            <div class="moto-footer">
+              <div class="price">$13,200 <small>Yangi • 2026</small></div>
+              <a href="#harley-iron" class="btn btn-primary">Batafsil</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Indian Scout Bobber -->
+        <article class="moto-card" data-cat="cruiser">
+          <div class="moto-img-wrap">
+            <span class="moto-category">Cruiser</span>
+            <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=800&q=80" alt="Indian Scout Bobber">
+          </div>
+          <div class="moto-body">
+            <h3>Indian Scout Bobber</h3>
+            <div class="moto-specs">
+              <span>⚡ 1133 cc</span>
+              <span>🐎 100 ot kuchi</span>
+              <span>🚀 195 km/soat</span>
+            </div>
+            <div class="moto-footer">
+              <div class="price">$14,900 <small>Yangi • 2026</small></div>
+              <a href="#indian-scout" class="btn btn-primary">Batafsil</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BATAFSIL MA'LUMOT MODALLARI (CSS :target) -->
+  <div id="ducati-v4" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <span class="badge">Sportbayk</span>
+      <h2>Ducati Panigale V4</h2>
+      <p style="color: var(--text-muted); margin: 12px 0;">MotoGP texnologiyasi asosida yaratilgan Desmosedici Stradale V4 dvigateli, Brembo Stylema tormoz tizimi va elektron boshqaruv paketi.</p>
+      <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary-red); margin-bottom: 20px;">Narxi: $24,500</p>
+      <a href="aloqa.html" class="btn btn-primary" style="width: 100%;">Buyurtma berish</a>
+    </div>
+  </div>
+
+  <div id="kawasaki-zx10r" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <span class="badge">Sportbayk</span>
+      <h2>Kawasaki Ninja ZX-10R</h2>
+      <p style="color: var(--text-muted); margin: 12px 0;">Superbike jahon chempionati g'olibi. Aerodinamik qanotchalar, TFT displey va kruiz-kontrol tizimi bilan jihozlangan.</p>
+      <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary-red); margin-bottom: 20px;">Narxi: $18,400</p>
+      <a href="aloqa.html" class="btn btn-primary" style="width: 100%;">Buyurtma berish</a>
+    </div>
+  </div>
+
+  <div id="yamaha-mt09" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <span class="badge">Hyper Naked</span>
+      <h2>Yamaha MT-09 SP</h2>
+      <p style="color: var(--text-muted); margin: 12px 0;">3 silindrli CP3 dvigatel, Öhlins orqa amortizatori va shahar ko'chalari uchun maksimal chaqqonlik.</p>
+      <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary-red); margin-bottom: 20px;">Narxi: $11,800</p>
+      <a href="aloqa.html" class="btn btn-primary" style="width: 100%;">Buyurtma berish</a>
+    </div>
+  </div>
+
+  <div id="ktm-duke" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <span class="badge">Super Naked</span>
+      <h2>KTM 1290 Super Duke R</h2>
+      <p style="color: var(--text-muted); margin: 12px 0;">"The Beast" nomi bilan mashhur V-Twin dvigatelli ultra-yengil va o'ta kuchli ko'cha bayki.</p>
+      <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary-red); margin-bottom: 20px;">Narxi: $19,600</p>
+      <a href="aloqa.html" class="btn btn-primary" style="width: 100%;">Buyurtma berish</a>
+    </div>
+  </div>
+
+  <div id="harley-iron" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <span class="badge">Cruiser</span>
+      <h2>Harley-Davidson Iron 883</h2>
+      <p style="color: var(--text-muted); margin: 12px 0;">Klassik qora dizayn, Evolution V-Twin dvigateli va uzoq safarlar uchun qulay o'rindiq.</p>
+      <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary-red); margin-bottom: 20px;">Narxi: $13,200</p>
+      <a href="aloqa.html" class="btn btn-primary" style="width: 100%;">Buyurtma berish</a>
+    </div>
+  </div>
+
+  <div id="indian-scout" class="modal-overlay">
+    <div class="modal-box">
+      <a href="#" class="modal-close">✕</a>
+      <span class="badge">Cruiser</span>
+      <h2>Indian Scout Bobber</h2>
+      <p style="color: var(--text-muted); margin: 12px 0;">Suyuqlik bilan sovutiladigan 100 ot kuchiga ega dvigatel, past profil va agressiv bobber uslubi.</p>
+      <p style="font-size: 1.4rem; font-weight: 800; color: var(--primary-red); margin-bottom: 20px;">Narxi: $14,900</p>
+      <a href="aloqa.html" class="btn btn-primary" style="width: 100%;">Buyurtma berish</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">REDLINE<span>MOTO</span></a>
+          <p>O'zbekistondagi premium motosikllar va moto-ekipirovka markazi. Tezlik va xavfsizlik uyg'unligi.</p>
+        </div>
+        <div>
+          <h4>Sahifalar</h4>
+          <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="katalog.html">Motosikllar katalogi</a></li>
+            <li><a href="haqimizda.html">Biz haqimizda</a></li>
+            <li><a href="aloqa.html">Aloqa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Toifalar</h4>
+          <ul>
+            <li><a href="katalog.html">Sportbayklar</a></li>
+            <li><a href="katalog.html">Street / Naked</a></li>
+            <li><a href="katalog.html">Cruiser & Chopper</a></li>
+            <li><a href="aloqa.html">Servis markazi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Bog'lanish</h4>
+          <ul>
+            <li><a href="tel:+998901234567">+998 (90) 123-45-67</a></li>
+            <li><a href="mailto:info@redlinemoto.uz">info@redlinemoto.uz</a></li>
+            <li><a href="aloqa.html">Toshkent sh., Amir Temur ko'chasi, 108</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 REDLINE MOTO. Barcha huquqlar himoyalangan.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
